@@ -18,7 +18,7 @@ Route::post('/products', function() {
         'product_name' => request('product_name'),
         'product_short_description' => request('product_short_description'),
         'product_full_description' => request('product_full_description'),
-        'product_category' => request('product_category'),
+        'product_category_id' => request('product_category_id'),
         'product_tags' => request('product_tags'),
         'product_attributes' => request('product_attributes'),
         'product_price' => request('product_price'),

@@ -13,28 +13,33 @@ return new class extends Migration
     {
         Schema::create('products', function (Blueprint $table) {
             $table->id();
-            $table->string('product_sku');
-            $table->string('product_name');
-            $table->text('product_short_description');
-            $table->text('product_full_description');
-            $table->string('product_category');
-            $table->string('product_tags');
-            $table->string('product_attributes');
-            $table->decimal('product_price', 8, 2);
-            $table->decimal('product_promo_price', 8, 2);
-            $table->integer('product_stock');
-            $table->integer('product_brand');
-            $table->decimal('product_weight', 5, 2);
-            $table->decimal('product_height', 5, 2);
-            $table->decimal('product_width', 5, 2);
-            $table->decimal('product_length', 5, 2);
-            $table->string('product_status');
-            $table->boolean('product_featured')->default(false);
-            $table->boolean('product_has_variation')->default(false);
-            $table->string('product_image_src');
+            $table->string('product_sku')->nullable();
+            $table->string('product_name')->nullable();
+            $table->text('product_short_description')->nullable();
+            $table->text('product_full_description')->nullable();
+            $table->unsignedBigInteger('product_category_id')->nullable();
+            $table->string('product_tags')->nullable();
+            $table->string('product_attributes')->nullable();
+            $table->decimal('product_price', 8, 2)->nullable();
+            $table->decimal('product_promo_price', 8, 2)->nullable();
+            $table->integer('product_stock')->nullable();
+            $table->string('product_brand')->nullable();
+            $table->decimal('product_weight', 5, 2)->nullable();
+            $table->decimal('product_height', 5, 2)->nullable();
+            $table->decimal('product_width', 5, 2)->nullable();
+            $table->decimal('product_length', 5, 2)->nullable();
+            $table->string('product_status')->nullable();
+            $table->boolean('product_featured')->default(FALSE)->nullable();
+            $table->boolean('product_has_variation')->default(FALSE)->nullable();
+            $table->string('product_image_src')->nullable();
 
 
             $table->timestamps();
+
+            $table->foreign('product_category_id')
+            ->references('id')
+            ->on('categories')
+            ->onDelete('set null');
         });
     }
 
