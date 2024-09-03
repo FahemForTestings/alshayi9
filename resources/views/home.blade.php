@@ -1,4 +1,5 @@
 @extends('layout')
+@section('title', 'Alshayi9 Store')
 @section('content')
     <div class="container mt-4">
         <div class="row">

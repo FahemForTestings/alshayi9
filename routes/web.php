@@ -13,10 +13,3 @@ Route::get('/products/create', [ProductsController::class, 'create']);
 Route::post('/products', [ProductsController::class, 'store']);
 
 Route::get('/products/{id}', [ProductsController::class, 'show']);
-
-/*
-Route::get('/products/{id}', function ($id) {
-    $product = Product::findorfail($id);
-    return view('products.show', compact('product'));
-});
-*/

@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Home - Alshayi9 Store</title>
+    <title>@yield('title')</title>
     <meta name="description" content="The Best Store Ever!">
     @vite(['resources/sass/app.scss', 'resources/js/app.js', 'resources/css/Inter.css'])
 </head>
