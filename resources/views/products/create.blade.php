@@ -33,7 +33,7 @@
 
       <div class="form-group">
         <label for="title">Product Category</label><br/>
-        <input type="text" name="product_category" id="product_category" class="form-control">
+        <input type="text" name="product_category_id" id="product_category_id" class="form-control">
       </div><br/>
 
       <div class="form-group">

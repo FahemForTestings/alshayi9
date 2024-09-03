@@ -11,10 +11,10 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top" data-bs-theme="dark">
         <div class="container">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Alshayi9</a>
+                <a class="navbar-brand" href="/">Alshayi9</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -45,7 +45,7 @@
 
     @yield('content')
 
-    <footer class="py-3 my-4 bg-dark">
+    <footer class="py-3 mt-4 bg-dark">
         <ul class="nav justify-content-center border-bottom pb-3 mb-3">
             <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Home</a></li>
             <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Features</a></li>
