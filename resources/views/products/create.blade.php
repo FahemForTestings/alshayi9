@@ -4,17 +4,21 @@
   <div class="container">
     <form action="/products" method="post">
       @csrf
-      <div class="form-group">
-        <label for="title">Product SKU</label><br/>
-        <input type="text" name="product_sku" id="product_sku" class="form-control">
-      </div><br/>
-
-      <div class="form-group">
-        <label for="title">Product Name</label><br/>
-        <input type="text" name="product_name" id="product_name" class="form-control">
-      </div><br/>
-
-
+      <div class="row">
+        <div class="col">
+          <div class="form-group">
+            <label for="title">Product SKU</label><br/>
+            <input type="text" name="product_sku" id="product_sku" class="form-control">
+          </div><br/>
+        </div>
+        <div class="col">
+          <div class="form-group">
+            <label for="title">Product Name</label><br/>
+            <input type="text" name="product_name" id="product_name" class="form-control">
+          </div><br/>
+        </div>
+      </div>
+      
       <div class="form-group">
         <label for="body">Product Short Description</label><br/>
         <textarea type="text" name="product_short_description" id="product_short_description" class="form-control" cols="30" rows="10"></textarea>

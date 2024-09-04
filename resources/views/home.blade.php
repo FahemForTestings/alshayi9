@@ -10,7 +10,7 @@
                         <div class="card-body">
                             <h5 class="card-title">{{ $product->product_name }}</h5>
                             <p class="card-text">{{ $product->product_short_description }}</p>
-                            <p class="card-text"><strong>Price:</strong> ${{ $product->product_price }}</p>
+                            <p class="card-text"><strong>Price:</strong> {{ $product->product_price }} Da</p>
                             <p class="card-text"><strong>Category:</strong> {{ $product->product_category_id }}</p>
                             <a href="/products/{{$product->id}}" class="btn btn-primary">View Product</a>
                         </div>

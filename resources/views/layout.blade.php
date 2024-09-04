@@ -7,6 +7,8 @@
     <title>@yield('title')</title>
     <meta name="description" content="The Best Store Ever!">
     @vite(['resources/sass/app.scss', 'resources/js/app.js', 'resources/css/Inter.css'])
+
+    @yield('head')
 </head>
 
 <body>
