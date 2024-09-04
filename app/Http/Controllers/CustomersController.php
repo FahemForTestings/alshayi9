@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Product;
 use App\Models\Customer;
 use Illuminate\Http\Request;
 
@@ -12,7 +13,9 @@ class CustomersController extends Controller
      */
     public function index()
     {
-        //
+        $customers = Customer::all();
+        $products = Product::all();
+        return view('orders.order', compact('customers', 'products'));
     }
 
     /**
@@ -28,7 +31,23 @@ class CustomersController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Customer::create([
+            'customer_fullname' => request('customer_fullname'),
+            'customer_phone_one' => request('customer_phone_one'),
+            'customer_phone_two' => request('customer_phone_two'),
+            'customer_state' => request('customer_state'),
+            'customer_town' => request('customer_town'),
+            'customer_address' => request('customer_address'),
+            'product_id' => request('product_id'),
+            'quantity' => request('quantity'),
+            'price' => request('price'),
+            //'bought' => request('bought'),
+            //'order_status' => request('order_status'),
+            //'gender' => request(''),
+            //'visit_source' => request(''),
+            //'source_link' => request(''),
+            //'profile' => request('')
+        ]);
     }
 
     /**
