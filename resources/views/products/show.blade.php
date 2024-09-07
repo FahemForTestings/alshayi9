@@ -24,7 +24,7 @@
 
 @section('content')
     <div class="container">
-        <form action="/orders" method="post">
+        <form action="/thankyou" method="post">
             @csrf
         <div class="row m-5">
             <div class="col-lg-7">

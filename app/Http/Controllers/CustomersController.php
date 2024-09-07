@@ -13,7 +13,7 @@ class CustomersController extends Controller
      */
     public function index()
     {
-        $customers = Customer::all();
+        $customers = Customer::all()->reverse();
         $products = Product::all();
         return view('orders.order', compact('customers', 'products'));
     }
@@ -31,7 +31,7 @@ class CustomersController extends Controller
      */
     public function store(Request $request)
     {
-        Customer::create([
+        $customer = Customer::create([
             'customer_fullname' => request('customer_fullname'),
             'customer_phone_one' => request('customer_phone_one'),
             'customer_phone_two' => request('customer_phone_two'),
@@ -48,15 +48,17 @@ class CustomersController extends Controller
             //'source_link' => request(''),
             //'profile' => request('')
         ]);
+        return redirect()->route('customers.show', $customer->id);
     }
 
     /**
      * Display the specified resource.
      */
     public function show(Customer $customer)
-    {
-        //
-    }
+{
+    $products = Product::all();
+    return view('orders.thankyou', compact('customer', 'products'));
+}
 
     /**
      * Show the form for editing the specified resource.
