@@ -13,12 +13,12 @@
         <img src="{{ asset('storage/images/thankyou/thankyou.webp') }}" alt="..."><br>
         <br>
         <hr><br>
-        <h3>We have recieved your order <span class="text-success">successfully!</span></h3>
+        <h1>تم استلام طلبكم <span class="text-success">بنجاح</span></h1>
     </div>
 
     <div class="container m-auto">
-        <div class="row">
-            <div class="col">
+        <div class="row mx-5">
+            <div class="col-8">
                 <table class="table my-5">
                     <thead class="table-dark">
                         <tr>
@@ -67,7 +67,7 @@
                     </tbody>
                 </table>
             </div>
-            <div class="col">
+            <div class="col-4 text-end">
                 <img id="img" src="{{ asset('storage/' . $selectedProduct->product_image_src) }}">
             </div>
         </div>

@@ -30,7 +30,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="/orders">Orders</a>
                         </li>
-
+                        <li class="nav-item">
+                            <a class="nav-link" href="/products/create">+ New Product</a>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link disabled" aria-disabled="true">0669 18 46 77</a>
                         </li>
@@ -44,7 +46,7 @@
         </div>
     </nav>
 
-
+    
     @yield('content')
 
     <footer class="py-3 mt-4 bg-dark">
