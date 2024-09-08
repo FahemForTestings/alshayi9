@@ -20,4 +20,4 @@ Route::post('/thankyou', [CustomersController::class, 'store']);
 
 Route::get('/orders', [CustomersController::class, 'index']);
 
-Route::get('/thankyou/{customer}', [CustomersController::class, 'show'])->name('customers.show');
+//Route::get('/thankyou/{customer}', [CustomersController::class, 'show'])->name('customers.show');

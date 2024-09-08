@@ -21,10 +21,7 @@ class CustomersController extends Controller
     /**
      * Show the form for creating a new resource.
      */
-    public function create()
-    {
-        //
-    }
+    public function create() {}
 
     /**
      * Store a newly created resource in storage.
@@ -48,17 +45,14 @@ class CustomersController extends Controller
             //'source_link' => request(''),
             //'profile' => request('')
         ]);
-        return redirect()->route('customers.show', $customer->id);
+        $products = Product::all();
+        return view('orders.thankyou', compact('customer', 'products'));
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(Customer $customer)
-{
-    $products = Product::all();
-    return view('orders.thankyou', compact('customer', 'products'));
-}
+    public function show(Customer $customer) {}
 
     /**
      * Show the form for editing the specified resource.
