@@ -38,6 +38,7 @@ class CustomersController extends Controller
             'product_id' => request('product_id'),
             'quantity' => request('quantity'),
             'price' => request('price'),
+            'customer_note' => request('customer_note'),
             //'bought' => request('bought'),
             //'order_status' => request('order_status'),
             //'gender' => request(''),

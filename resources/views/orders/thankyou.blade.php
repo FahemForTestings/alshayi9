@@ -13,7 +13,7 @@
         <img src="{{ asset('storage/images/thankyou/thankyou.webp') }}" alt="..."><br>
         <br>
         <hr><br>
-        <h1>تم استلام طلبكم <span class="text-success">بنجاح</span></h1>
+        <h1 style="direction: rtl">تم استلام طلبكم <span class="text-success">بنجاح!</span></h1>
     </div>
 
     <div class="container m-auto">

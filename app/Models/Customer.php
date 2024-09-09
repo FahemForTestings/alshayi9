@@ -20,6 +20,7 @@ class Customer extends Model
         'product_id',
         'quantity',
         'price',
+        'customer_note',
         'bought',
         'order_status',
         'gender',

@@ -29,7 +29,7 @@
         <div class="row m-5">
             <div class="col-lg-7">
                 <div class="mb-4">
-                    <div class="card me-5 px-3">
+                    <div class="card ms-5 px-3">
                         <img src="{{ asset('storage/' . $product->product_image_src) }}" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">{{ $product->product_name }}</h5>
@@ -40,7 +40,7 @@
                     </div>
                 </div>
                 <div class="mb-4">
-                    <div class="card me-5 px-3">
+                    <div class="card ms-5 px-3">
                         <img src="{{ asset('storage/' . $product->product_image_src) }}" class="card-img-top"
                             alt="...">
                         <div class="card-body">
@@ -52,7 +52,7 @@
                     </div>
                 </div>
                 <div class="mb-4">
-                    <div class="card me-5 px-3">
+                    <div class="card ms-5 px-3">
                         <img src="{{ asset('storage/' . $product->product_image_src) }}" class="card-img-top"
                             alt="...">
                         <div class="card-body">
@@ -68,19 +68,19 @@
             
             <div class="col-lg-5 p-4 bg-warning bg-opacity-25 rounded sticky-card h-100">
                 <div class="form-group">
-                    <label for="title">Full Name</label><br />
+                    <label for="title">الاسم الكامل</label><br />
                     <input type="text" name="customer_fullname" id="customer_fullname" class="form-control">
                 </div><br />
                 <div class="row">
                     <div class="col">
                         <div class="form-group">
-                            <label for="title">Phone Number 1</label><br />
+                            <label for="title">رقم الهاتف اﻷول</label><br />
                             <input type="text" name="customer_phone_one" id="customer_phone_one" class="form-control">
                         </div><br />
                     </div>
                     <div class="col">
                         <div class="form-group">
-                            <label for="title">Phone Number 2</label><br />
+                            <label for="title">رقم الهاتف الثاني</label><br />
                             <input type="text" name="customer_phone_two" id="customer_phone_two" class="form-control">
                         </div><br />
                     </div>
@@ -89,13 +89,13 @@
                 <div class="row">
                     <div class="col">
                         <div class="form-group">
-                            <label for="title">Wilaya</label><br />
+                            <label for="title">الولاية</label><br />
                             <input type="text" name="customer_state" id="customer_state" class="form-control">
                         </div><br />
                     </div>
                     <div class="col">
                         <div class="form-group">
-                            <label for="title">Commune</label><br />
+                            <label for="title">البلدية</label><br />
                             <input type="text" name="customer_town" id="customer_town" class="form-control">
                         </div><br />
                     </div>
@@ -103,28 +103,28 @@
 
 
                 <div class="form-group">
-                    <p>Shipping home or stop desk?</p>
+                    <p>التوصيل للمنزل ولا لمكتب شركة التوصيل؟</p>
                     <input role="button" id="doorstep" name="" type="radio">
-                    <label id="doorstep-label" for="">home</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <label id="doorstep-label" for="">لباب المنزل</label>&nbsp;&nbsp;&nbsp;&nbsp;
                     <input role="button" id="office" name="" type="radio">
-                    <label id="office-label" for="office">stop desk</label>
+                    <label id="office-label" for="office">للمكتب</label>
                 </div><br>
 
                 <div class="form-group">
-                    <label for="title">Full Address</label><br />
+                    <label for="title">العنوان كاملا</label><br />
                     <input type="text" name="customer_address" id="customer_address" class="form-control">
                 </div><br />
 
                 <div class="row">
                     <div class="col-4">
                         <div class="form-group">
-                            <label for="title">Quantity</label><br />
-                            <input type="number" name="quantity" id="quantity" class="form-control">
+                            <label for="title">الكمية</label><br />
+                            <input type="number" name="quantity" id="quantity" value="1" class="form-control">
                         </div><br />
                     </div>
-                    <div class="col-8 text-end">
+                    <div class="col-8 text-start">
                         <div class="form-group">
-                            <label for="title">Total price: {{$product->product_price}} DZD</label><br />
+                            <label for="title">االسعر الإجمالي: {{$product->product_price}} DZD</label><br />
                             <input type="number" name="price" id="price" value="{{$product->product_price}}" class="d-none form-control">
                         </div><br />
                     </div>
@@ -135,8 +135,8 @@
                 </div><br />
 
                 <div class="form-group">
-                    <label for="body">Customer Note</label><br />
-                    <textarea type="text" name="" id="product_short_description" class="form-control"
+                    <label for="body">لديك ملاحظة؟؟ أكتبها تحت</label><br />
+                    <textarea type="text" name="customer_note" id="customer_note" class="form-control"
                         cols="30" rows="5"></textarea>
                 </div><br />
 

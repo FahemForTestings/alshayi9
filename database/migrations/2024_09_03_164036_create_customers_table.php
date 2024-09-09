@@ -14,17 +14,18 @@ return new class extends Migration
         Schema::create('customers', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('customer_id');
-            $table->string('customer_fullname');
-            $table->integer('customer_phone_one');
+            $table->string('customer_fullname')->nullable();
+            $table->integer('customer_phone_one')->nullable();
             $table->integer('customer_phone_two')->nullable();
-            $table->string('customer_state');
-            $table->string('customer_town');
+            $table->string('customer_state')->nullable();
+            $table->string('customer_town')->nullable();
             $table->string('customer_address')->nullable();
             $table->unsignedBigInteger('product_id')->nullable();
             $table->unsignedBigInteger('quantity')->default(1);
             $table->decimal('price', 8, 2)->default(0);
+            $table->string('customer_note')->nullable();
             $table->boolean('bought')->default(FALSE);
-            $table->string('order_status');
+            $table->string('order_status')->nullable();
             
             //Stalking infos
             $table->string('gender')->nullable();
@@ -33,8 +34,6 @@ return new class extends Migration
             $table->string('profile')->nullable();
             
             $table->timestamps();
-            
-            
             $table->foreign('product_id')
             ->references('id')
             ->on('products')
