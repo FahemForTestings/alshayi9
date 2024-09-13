@@ -66,7 +66,7 @@
             </div>
 
             
-            <div class="col-lg-5 p-4 bg-warning bg-opacity-25 rounded sticky-card h-100">
+            <div class="col-lg-5 p-4 bg-success bg-opacity-10 rounded sticky-card h-100">
                 <div class="form-group">
                     <label for="title">الاسم الكامل</label><br />
                     <input type="text" name="customer_fullname" id="customer_fullname" class="form-control">
@@ -101,6 +101,10 @@
                     </div>
                 </div>
 
+                <div class="form-group">
+                    <label for="title">العنوان كاملا</label><br />
+                    <input type="text" name="customer_address" id="customer_address" class="form-control">
+                </div><br />
 
                 <div class="form-group">
                     <p>التوصيل للمنزل ولا لمكتب شركة التوصيل؟</p>
@@ -109,11 +113,6 @@
                     <input role="button" id="office" name="" type="radio">
                     <label id="office-label" for="office">للمكتب</label>
                 </div><br>
-
-                <div class="form-group">
-                    <label for="title">العنوان كاملا</label><br />
-                    <input type="text" name="customer_address" id="customer_address" class="form-control">
-                </div><br />
 
                 <div class="row">
                     <div class="col-4">
@@ -124,7 +123,7 @@
                     </div>
                     <div class="col-8 text-start">
                         <div class="form-group">
-                            <label for="title">االسعر الإجمالي: {{$product->product_price}} DZD</label><br />
+                            <label for="title">السعر الإجمالي: {{$product->product_price}} DZD</label><br />
                             <input type="number" name="price" id="price" value="{{$product->product_price}}" class="d-none form-control">
                         </div><br />
                     </div>
@@ -133,15 +132,15 @@
                 <div class="form-group">
                     <input type="text" name="product_id" id="product_id" value="{{$product->id}}" class="d-none form-control">
                 </div><br />
-
+                <!--
                 <div class="form-group">
                     <label for="body">لديك ملاحظة؟؟ أكتبها تحت</label><br />
                     <textarea type="text" name="customer_note" id="customer_note" class="form-control"
                         cols="30" rows="5"></textarea>
                 </div><br />
-
+                -->
                 <div class="text-center bg-danger rounded">
-                    <button type="submit" class="btn m-2 text-white fs-5 fw-bold">Purchase Now!!</button>
+                    <button type="submit" class="btn m-2 text-white fs-5 fw-bold">اشتر الآن!!</button>
                 </div>
 
             </div>
