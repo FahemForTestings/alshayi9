@@ -34,8 +34,8 @@
                         <div class="card-body">
                             <h5 class="card-title">{{ $product->product_name }}</h5>
                             <p class="card-text">{{ $product->product_short_description }}</p>
-                            <p class="card-text"><strong>Price:</strong> {{ $product->product_price }} Da</p>
-                            <p class="card-text"><strong>Category:</strong> {{ $product->product_category_id }}</p>
+                            <p class="card-text"><strong>السعر:</strong> {{ $product->product_price }} دج</p>
+                            <p class="card-text"><strong>الفئة:</strong> {{ $product->product_category_id }}</p>
                         </div>
                     </div>
                 </div>
@@ -46,8 +46,8 @@
                         <div class="card-body">
                             <h5 class="card-title">{{ $product->product_name }}</h5>
                             <p class="card-text">{{ $product->product_short_description }}</p>
-                            <p class="card-text"><strong>Price:</strong> {{ $product->product_price }} Da</p>
-                            <p class="card-text"><strong>Category:</strong> {{ $product->product_category_id }}</p>
+                            <p class="card-text"><strong>السعر:</strong> {{ $product->product_price }} دج</p>
+                            <p class="card-text"><strong>الفئة:</strong> {{ $product->product_category_id }}</p>
                         </div>
                     </div>
                 </div>
@@ -58,8 +58,8 @@
                         <div class="card-body">
                             <h5 class="card-title">{{ $product->product_name }}</h5>
                             <p class="card-text">{{ $product->product_short_description }}</p>
-                            <p class="card-text"><strong>Price:</strong> {{ $product->product_price }} Da</p>
-                            <p class="card-text"><strong>Category:</strong> {{ $product->product_category_id }}</p>
+                            <p class="card-text"><strong>السعر:</strong> {{ $product->product_price }} دج</p>
+                            <p class="card-text"><strong>الفئة:</strong> {{ $product->product_category_id }}</p>
                         </div>
                     </div>
                 </div>
@@ -123,7 +123,7 @@
                     </div>
                     <div class="col-8 text-start">
                         <div class="form-group">
-                            <label for="title">السعر الإجمالي: {{$product->product_price}} DZD</label><br />
+                            <label for="title">السعر الإجمالي: {{$product->product_price}} دج</label><br />
                             <input type="number" name="price" id="price" value="{{$product->product_price}}" class="d-none form-control">
                         </div><br />
                     </div>

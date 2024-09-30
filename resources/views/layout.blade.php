@@ -16,7 +16,7 @@
     <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top" data-bs-theme="dark">
         <div class="container">
             <div class="container-fluid">
-                <a class="navbar-brand" href="/">Alshayi9</a>
+                <a class="navbar-brand" href="/">الشيق</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -25,21 +25,21 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/">Home</a>
+                            <a class="nav-link active" aria-current="page" href="/">الرئيسية</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/orders">Orders</a>
+                            <a class="nav-link" href="/orders">الطلبيات</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/products/create">+ New Product</a>
+                            <a class="nav-link" href="/products/create">أضف منتج+</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled" aria-disabled="true">0669 18 46 77</a>
+                            <a class="nav-link disabled" aria-disabled="true" dir="ltr">0669 18 46 77</a>
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-warning" type="submit">Search</button>
+                        <input class="form-control me-2" type="search" placeholder="أكتب شيئا.." aria-label="Search">
+                        <button class="btn btn-outline-warning" type="submit">بحث</button>
                     </form>
                 </div>
             </div>
@@ -51,13 +51,13 @@
 
     <footer class="py-3 mt-4 bg-dark">
         <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Features</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Pricing</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-light">FAQs</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-light">About</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-light">الرئيسية</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-light">سياسة الإستخدام</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-light">التوصيل والإرجاع</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-light">أسئلة شائعة</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-light">من نحن؟</a></li>
         </ul>
-        <p class="text-center text-light">© 2024 Company, Inc</p>
+        <p class="text-center text-light">كل الحقوق محفوظة للمتجر الشيق © 2024</p>
     </footer>
 </body>
 

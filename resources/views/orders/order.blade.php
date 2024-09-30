@@ -14,19 +14,19 @@
         <table class="table my-5">
             <thead class="table-dark">
                 <tr>
-                    <th>Order</th>
-                    <th>Product</th>
-                    <th>Price</th>
-                    <th>Quantity</th>
-                    <th>Total Price</th>
-                    <th>Full Name</th>
-                    <th>Phone 1</th>
-                    <th>Phone 2</th>
-                    <th>Wilaya</th>
-                    <th>Commune</th>
-                    <th>Full Address</th>
-                    <th>Customer Note</th>
-                    <th>Time</th>
+                    <th>الطلبية</th>
+                    <th>المنتج</th>
+                    <th>السعر</th>
+                    <th>الكمية</th>
+                    <th>السعر الكلي</th>
+                    <th>الاسم الكامل</th>
+                    <th>رقم الهاتف 1</th>
+                    <th>رقم الهاتف 2</th>
+                    <th>الولاية</th>
+                    <th>البلدية</th>
+                    <th>العنوان الكامل</th>
+                    <th>ملاحظة الزبون</th>
+                    <th>تاريخ الطلبية</th>
                 </tr>
             </thead>
             <tbody>
@@ -34,10 +34,11 @@
                     @php
                         $productReelId = $customer->product_id - 1;
                         $selectedProduct = $products[$productReelId];
+                        $title = $selectedProduct->product_name;
                     @endphp
                     <tr>
                         <td class="table-dark">{{ $key + 1 }}</td>
-                        <td><img src="{{ asset('storage/' . $selectedProduct->product_image_src) }}"></td>
+                        <td title="{{$title}}"><img src="{{ asset('storage/' . $selectedProduct->product_image_src) }}"></td>
                         <td>{{ $customer->price }}</td>
                         <td>{{ $customer->quantity }}</td>
                         <td>{{ $customer->price * $customer->quantity }}</td>

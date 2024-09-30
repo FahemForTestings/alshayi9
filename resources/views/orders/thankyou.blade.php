@@ -22,10 +22,10 @@
                 <table class="table my-5">
                     <thead class="table-dark">
                         <tr>
-                            <th>Product</th>
-                            <th>Price</th>
-                            <th>Quantity</th>
-                            <th>Total Price</th>
+                            <th>المنتح</th>
+                            <th>السعر</th>
+                            <th>الكمية</th>
+                            <th>السعر الإجمالي</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -47,12 +47,12 @@
                 <table class="table my-5">
                     <thead class="table-success">
                         <tr>
-                            <th>Full Name</th>
-                            <th>Phone 1</th>
-                            <th>Phone 2</th>
-                            <th>Wilaya</th>
-                            <th>Commune</th>
-                            <th>Full Address</th>
+                            <th>الاسم الكامل</th>
+                            <th>رقم الهاتف الأول</th>
+                            <th>رقم الهاتف الثاني</th>
+                            <th>الولاية</th>
+                            <th>البلدية</th>
+                            <th>العنوان الكامل</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -67,7 +67,7 @@
                     </tbody>
                 </table>
             </div>
-            <div class="col-4 text-end">
+            <div class="col-4 text-start">
                 <img id="img" src="{{ asset('storage/' . $selectedProduct->product_image_src) }}">
             </div>
         </div>
